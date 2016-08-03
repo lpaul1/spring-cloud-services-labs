@@ -1,0 +1,8 @@
+applications:
+- name: lp-configserver
+  memory: 512M
+  timeout: 180
+  host: lp-configserver-${random-word}
+  # Currently defaults to Stackato4 hackathon environment on AWS USeast1
+  path: target/config-server-0.0.1-SNAPSHOT.jar
+
